@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## A New Post
 
 ... and a new day. This is the first entry on my blog, hopefully of many to come.
