@@ -2,14 +2,18 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+I am a Student at the University of Texas at Austin. I'm in the Turing Scholars program for Honors Computer Science.
 
-### More Information
+### Interests
 
-A place to include any other types of information that you'd like to include about yourself.
+ - Compilers
+ - Programming Languages
+ - Functional Programming
+ - Systems
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[kasra@cs.utexas.edu](mailto:kasra@cs.utexas.edu)
