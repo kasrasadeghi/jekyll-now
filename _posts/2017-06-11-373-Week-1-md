@@ -1,0 +1,114 @@
+---
+layout: swe
+title: "Software Engineering: Week 1"
+published: true
+---
+
+This is my second post for CS 373: Software Engineering. I'll be
+talking about Monads, projects, Python, and Group Projects.
+
+### What did you do this past week?
+
+I learned a lot about Monads. See the
+classic [LYAH](http://learnyouahaskell.com/a-fistful-of-monads), [You
+Could Have Invented Monads!](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html) and
+[Escaping Hell with Monads](https://philipnilsson.github.io/Badness10k/posts/2017-05-07-escaping-hell-with-monads.html). All
+great reads.
+
+I've watched
+[a talk about Monads in C++](https://www.youtube.com/watch?v=BFnhhPehpKw&t=2668s) and
+a talk about [Category Theory](https://www.youtube.com/watch?v=V10hzjgoklA).
+
+I learned about lowering in compilers,
+from
+[this great post](http://mattwarren.org/2017/05/25/Lowering-in-the-C-Compiler/).
+
+I've worked on a couple toy
+projects. The first is [StateMonad](https://github.com/kasrasadeghi/StateMonad)
+which is trying to explore evaluation of procedural code that analyzes
+and keeps tracks of effects. I also wrote some parser combinators
+for it, which was
+fun. See
+[this post](https://fsharpforfunandprofit.com/posts/understanding-parser-combinators/) to
+learn more about those. The second project
+is [CollatzGraph](https://github.com/kasrasadeghi/CollatzGraph) where
+I was trying to make a generator for the Collatz Graphs I was manually
+drawing, initially inspired by the ridiculous increase in path length
+for the input of 27.
+
+I worked a lot on the projects for the two classes. Throughout
+working on them, I figured out some neat ways to automate workflow and
+to integrate the workflow of the class with tooling I'm already
+familiar with. I used PyCharm and CLion for the projects, and I found
+some plugins that make using them very convenient.
+
+Also, I learned a lot about managing git repositories, Tasks
+integrating with issues on a GitHub repository, closing an issue with
+a commit message, forking a repository, and pull request.
+
+I've been meaning to test out development branches, but it seemed like
+too much of a hassle to figure out on a one person project and not
+enough benefit.
+
+### What's in your way?
+
+Weird Python versioning issues. The IDE I currently use has Python 3.6
+installed and the class requires Python 3.5. Currently, I'm just
+ignoring the nice Python 3.6 features like typed assignment and other
+stuff and just testing it on a local *Docker* image for each build.
+
+I expected the C++ development environment to get in my way more, but
+honestly it was great. The *makefile* provided with the assignment
+made many things great to work with, but editing it seems to create
+weird issues, so I tried not to touch it and did most of my
+configuration in a combination of shell scripts and IDE management.
+
+### What will you do next week?
+
+Next week I'm starting a group project. I still don't know who I'm
+working with, but I look forward to it as a learning experience. I
+think the hardest thing about the projects is definitely going to be
+learning how to play to each of our strengths and weaknesses and how
+to communicate about tasks, issues, and responsibilities effectively. 
+
+The last time I worked in a group programming project was during p5
+for architecture. There was 10 people in the group and we had a week
+to implement a unique feature for each of us. p4 was a compiler for a
+programming language, and some features that people worked on were
+ncurses-based graphics support, compatibility with CDECL, and lists. I
+worked on a type-checker for the language. Because there were a lot of
+disagreements with how the feature should be implemented and how it
+should interact with the rest of the code base, it ended up being a
+separate but compatible project that compiled a separate language to
+the lower-level, unsafe language that the rest of the code interacted
+with.
+
+I think if I had read the same things about software engineering work
+in a team and about having frequent releases, the project would have
+been much easier to manage, but I think that the greatest problem was
+the incredibly small amount of time given to us in the project.
+
+### What's my experience of the class?
+
+I am really enjoying the class so far. I've learned a lot about
+optimization, which has been interesting. It's also very useful to
+learn about Python's exception handling and Python language features
+in a more rigorous way. It's a very useful language; it's good for fast
+prototyping and writing testing code, and also for writing glue
+between many different applications.
+
+### What's my pick-of-the-week or tip-of-the-week?
+
+There's [this great website](https://learn-anything.xyz/) I found
+on [reddit.com](https://www.reddit.com) that lets you look up stuff
+and it gives you a tree of how things are related and what order to
+learn things in. It's not perfect, but it's a good way of finding
+interesting resources and relationships between concepts.
+
+I would also recommend checking
+out
+[BashSupport](https://plugins.jetbrains.com/plugin/4230-bashsupport)
+for any of the IntelliJ IDEs. It lets you make bash scripts runnable
+for the project, so automated *make test* and *make build* without
+having to leave the IDE. Very very helpful. Can also launch *Docker*
+inside of the script, so that's nice.
