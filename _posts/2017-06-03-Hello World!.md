@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Hello World!
 ---
 
 ## A New Post
